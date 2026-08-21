@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contact Section For Any Query">
+        <meta name="keywords" content="html, css, contact section">
+        <title>Contact Section</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                margin: auto;
+            }
+            td {
+                height: 500px;
+                width: 500px;
+                border: none;
+                vertical-align: top;
+                padding: 50px;
+            }
+            h2 {
+                text-align: center;
+                color: orangered;
+                font-size:xx-large;
+            }
+            td:first-child {
+                border-right: 1px solid black;
+                border-color: orangered;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>CONTACT US</h2>
+
+        <table>
+            <tr>
+                <td>
+                    <h3>Location</h3>
+                    <iframe
+                        src="https://maps.google.com/maps?q=BitKhanan+IT+Education+Surat&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </td>
+                <td>
+                    <h3>Contact</h3>
+                    <form>
+                        <input type="text" name="yourname" placeholder="Your Name" required><br><br>
+                        <input type="email" name="email" placeholder="Email" required><br><br>
+                        <input type="tel" name="phonenumber" placeholder="Mobile Number" required><br><br>
+                        <textarea type="text" placeholder="Message" name="message"></textarea>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
