@@ -10,7 +10,7 @@
             table {
                 border-collapse: collapse;
                 margin: auto;
-            }
+            }   
             td {
                 height: 500px;
                 width: 500px;
@@ -26,6 +26,41 @@
             td:first-child {
                 border-right: 1px solid black;
                 border-color: orangered;
+            }
+            input {
+                padding: 7px 7px;
+            }
+            textarea {
+                padding-left: 10px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea {
+                width: 100%;             /* Makes it expand to fill its container (or use e.g. width: 400px) */
+                padding: 14px 18px;      /* Makes the input taller with internal space */
+                font-size: 15px;         /* Makes the typed text and placeholder larger */
+                box-sizing: border-box;  /* Keeps width at exactly 100% including padding */
+            }
+            input::placeholder,
+            textarea::placeholder {
+                font-family: 'Times New Roman', Times, serif;
+            }
+            input:focus::placeholder, textarea:focus::placeholder {
+                color: black;
+            }
+            h3 {
+                font-size: xx-large;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+            }
+            button {
+                border: 2px solid orangered;
+                background-color: white;
+            }
+            label {
+                border: 1px solid black;
+                padding: 15px;
             }
         </style>
     </head>
@@ -49,7 +84,11 @@
                         <input type="text" name="yourname" placeholder="Your Name" required><br><br>
                         <input type="email" name="email" placeholder="Email" required><br><br>
                         <input type="tel" name="phonenumber" placeholder="Mobile Number" required><br><br>
-                        <textarea type="text" placeholder="Message" name="message"></textarea>
+                        <textarea type="text" placeholder="Message" name="message" rows="3"></textarea><br><br>
+                        <label>
+                            <input type="checkbox">I'm not a robot
+                        </label><br><br>
+                        <button type="submit">SUBMIT</button>
                     </form>
                 </td>
             </tr>
