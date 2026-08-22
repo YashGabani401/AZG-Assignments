@@ -97,11 +97,24 @@
                 gap: 10px;
                 color: #222222;
             }
+            .main-title {
+                display: flex;
+                align-items:flex-end;
+                gap: 10px;
+                flex-direction: column;
+                align-items: center;
+            }
+            .main-title::after {
+                content: '';
+                width: 60px;
+                height: 4px;
+                background-color: darkblue;
+            }
         </style>
     </head>
 
     <body>
-        <h2>CONTACT US</h2>
+        <h2 class="main-title">CONTACT US</h2>
 
         <table>
             <tr>
